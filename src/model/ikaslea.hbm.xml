@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE hibernate-mapping PUBLIC
+  "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+  "http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+
+<hibernate-mapping>
+    <class name="model.Person" table="ikasleak" catalog="ikasleak" optimistic-lock="version">
+        <id name="id" type="java.lang.Integer">
+            <column name="id" />
+            <generator class="identity" />
+        </id>
+        <property name="izena" type="string">
+            <column name="izena" length="50" />
+        </property>
+        <property name="abizena" type="string">
+            <column name="abizena" length="50" />
+        </property>
+        <property name="korreoa" type="java.lang.Double">
+            <column name="korreoa" length="50" />
+        </property>
+    </class>
+</hibernate-mapping>
